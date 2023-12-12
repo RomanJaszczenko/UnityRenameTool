@@ -11,10 +11,10 @@ namespace UniversalRenameTool {
 			_isWantedName = isWantedName;
 		}
 
-		public Object[] FilterObjects(GameObject root, string text) {
-			var container = new List<Object>();
-			FilterObjects(container, root, text);
-			return container.ToArray();
+		public List<Object> FilterObjects(GameObject root, string text) {
+                        var container = new List<Object>();
+                        FilterObjects(container, root, text);
+                        return container;
 		}
 
 		void FilterObjects(List<Object> container, GameObject gameObject, string text) {
